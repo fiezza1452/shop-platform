@@ -1,0 +1,9 @@
+services:
+  nuxt:
+    build: .
+    container_name: nuxtjs_project
+    restart: unless-stopped
+    ports:
+      - "8081:8081"
+    environment:
+      - NODE_ENV=production
