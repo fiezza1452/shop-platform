@@ -23,16 +23,4 @@ jobs:
             docker compose down
             docker compose up -d --build
 
-      - name: Notify Line - Success
-        if: success()
-        run: |
-          curl -X POST https://notify-api.line.me/api/notify \
-            -H "Authorization: Bearer ${{ secrets.LINE_NOTIFY_TOKEN }}" \
-            -d "message=✅ Deploy สำเร็จ! Branch: ${{ github.ref_name }} Commit: ${{ github.event.head_commit.message }}"
 
-      - name: Notify Line - Failure
-        if: failure()
-        run: |
-          curl -X POST https://notify-api.line.me/api/notify \
-            -H "Authorization: Bearer ${{ secrets.LINE_NOTIFY_TOKEN }}" \
-            -d "message=❌ Deploy ล้มเหลว! Branch: ${{ github.ref_name }} Commit: ${{ github.event.head_commit.message }}"
