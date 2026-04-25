@@ -15,6 +15,8 @@ FROM node:20-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
+ENV HOST=0.0.0.0
+ENV PORT=8081
 ENV NUXT_HOST=0.0.0.0
 ENV NUXT_PORT=8081
 
