@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "All Products",
+    "cart": "Cart",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero_title": "Shop Quality Products\nat the Best Price",
+    "hero_sub": "Premium products in many categories. Fast and safe delivery.",
+    "hero_btn": "View All Products →",
+    "stats_products": "Products",
+    "stats_customers": "Happy Customers",
+    "stats_delivery": "Delivery within",
+    "featured": "Featured Products",
+    "view_all": "View All →",
+    "promo_title": "Special Promotion!",
+    "promo_sub": "Up to 30% off on selected items. Today only!",
+    "promo_btn": "Claim Discount"
+  },
+  "products": {
+    "title": "All Products",
+    "search": "Search products...",
+    "found": "Found {count} products",
+    "not_found": "No products found",
+    "add_to_cart": "Add to Cart",
+    "out_of_stock": "Out of Stock",
+    "reviews": "reviews",
+    "all": "All"
+  },
+  "product": {
+    "back": "← Back to all products",
+    "in_stock": "In Stock",
+    "out_of_stock": "Out of Stock",
+    "add_to_cart": "Add to Cart",
+    "added": "✓ Added to cart!",
+    "not_found": "Product not found"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "summary": "Order Summary",
+    "items": "Items ({count})",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continue": "← Continue Shopping",
+    "remove": "Remove",
+    "empty_title": "Your cart is empty",
+    "empty_sub": "Add some products and come back to checkout",
+    "start_shop": "Start Shopping",
+    "success_title": "Order Placed!",
+    "success_sub": "Thank you for shopping at ShopNow.\nWe will deliver as soon as possible.",
+    "back_home": "Back to Home"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "btn": "Login",
+    "no_account": "Don't have an account?",
+    "register_link": "Register",
+    "forgot": "Forgot password?"
+  },
+  "register": {
+    "title": "Register",
+    "name": "Full Name",
+    "email": "Email",
+    "password": "Password",
+    "confirm_password": "Confirm Password",
+    "btn": "Register",
+    "have_account": "Already have an account?",
+    "login_link": "Login",
+    "success": "Registration successful! Please login."
+  },
+  "footer": "Your trusted online store"
+}
