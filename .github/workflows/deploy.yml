@@ -13,8 +13,21 @@ jobs:
       - name: Deploy
         run: |
           cd ~/shop-platform
+
+          # เก็บ commit ปัจจุบันก่อน pull
+          PREVIOUS_COMMIT=$(git rev-parse HEAD)
+
           git pull
-          docker compose down
-          docker compose up -d --build
+
+          # build ใหม่
+          if docker compose up -d --build; then
+            echo "✅ Deploy สำเร็จ"
+          else
+            echo "❌ Deploy ล้มเหลว กำลัง rollback..."
+            git checkout $PREVIOUS_COMMIT
+            docker compose up -d --build
+            echo "↩️ Rollback เสร็จสิ้น"
+            exit 1
+          fi
 
 
